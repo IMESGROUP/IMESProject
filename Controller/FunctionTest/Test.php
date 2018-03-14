@@ -23,7 +23,6 @@ if(isset($_SESSION['save']))
 function issetArray($aArray, $arrayKey) {
     foreach ($arrayKey as $value) {
         if (!isset($aArray[$value])) {
-            echo $aArray[$value];
             return false;
         }
     }return true;

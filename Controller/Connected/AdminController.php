@@ -1,7 +1,7 @@
 <?php
 
-function addUser($login,$password) {
+function addUser($password,$userType,$userName,$userSurname,$mail) {
 	require("./Model/UserManager.php");
 	$userObject = new \IMES\Model\UserManager;
-	$userObject->addUser($login,$password);
+	$userObject->addUser($password,$userType,$userName,$userSurname,$mail);
 }
